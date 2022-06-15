@@ -89,6 +89,9 @@
     cursor: pointer;
     color: white;
 }
+.login-new_account > span{
+    text-decoration: underline;
+}
 .test-button{
     text-align: center;
     width: 100%;

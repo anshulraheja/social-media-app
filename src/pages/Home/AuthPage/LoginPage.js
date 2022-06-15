@@ -2,7 +2,7 @@ import './AuthPage.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
-import { login } from "../../../redux/reducers/authSlice";
+import { login, testLogin } from "../../../redux/reducers/authSlice";
 const LoginPage = () => {
     const dispatch = useDispatch();
     const [loginData, setloginData] = useState({
@@ -35,17 +35,11 @@ const LoginPage = () => {
                     <div>
                         <label htmlFor="password">Password</label>
                         <input type="password" name="password" placeholder="admin123" id="password" onChange={inputHandler} required />
-
-                        <div className="login-remember">
-                            <span>
-                                <input type="checkbox" id="rememberme" name="rememberme" onChange={inputHandler} />
-                                <label htmlFor="rememberme">Remember me</label>
-                            </span>
-                            <a href="#">Forgot your password?</a>
-                        </div>
                     </div>
                     <button className="login-button" type="submit">Login</button>
+                    <div className="test-button" onClick={() => dispatch(testLogin())}>Test user</div>
                     <Link to="/signup" className="login-new_account" >Create New Account</Link>
+
                 </form>
             </section>
         </div>

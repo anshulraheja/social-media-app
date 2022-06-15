@@ -59,16 +59,10 @@ const SignupPage = () => {
                     <div>
                         <label htmlFor="confirmpassword">Confirm Passowrd</label>
                         <input type="password" placeholder="Confirm Passowrd" name="confirmpassword" onChange={inputHandler} required />
-                        <div className="login-remember">
-                            <span>
-                                <input type="checkbox" name="terms" onChange={inputHandler} required />
-                                <label htmlFor="terms"> I accept all Terms and Conditions</label>
-                            </span>
-                        </div>
                     </div>
                     <button type="submit" className="login-button">Create New Account</button>
                     <div className="test-button" onClick={() => dispatch(testLogin())}>Test user</div>
-                    <Link to="/login" className="login-new_account">Already Have an account? Login</Link>
+                    <Link to="/login" className="login-new_account">Already Have an account? <span>Login</span></Link>
                 </form>
             </section>
             </div>
