@@ -2,7 +2,7 @@ import './AuthPage.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { signUp, testLogin } from "../../../redux/reducers/authSlice";
+import { signUp, testLogin } from "../../redux/reducers/authSlice";
 import { toast } from "react-toastify";
 const SignupPage = () => {
     const dispatch = useDispatch();

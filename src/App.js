@@ -5,8 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Routes, Route } from 'react-router-dom'
 import { MainContainer } from "./component/MainContainer/MainContainer";
 import Home from "./pages/Home/Home";
-import LoginPage from "./pages/Home/AuthPage/LoginPage";
-import SignupPage from "./pages/Home/AuthPage/SignupPage";
+import { LoginPage, SignupPage } from "./pages/AuthPage/";
 import PrivateRoute from './component/private-route/PrivateRoute'
 import RestrictedRoute from './component/restricted-route/RestrictedRoute';
 

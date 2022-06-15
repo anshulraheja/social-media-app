@@ -2,7 +2,7 @@ import './AuthPage.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
-import { login, testLogin } from "../../../redux/reducers/authSlice";
+import { login, testLogin } from "../../redux/reducers/authSlice";
 const LoginPage = () => {
     const dispatch = useDispatch();
     const [loginData, setloginData] = useState({
