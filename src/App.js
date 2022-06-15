@@ -1,8 +1,43 @@
 import "./App.css";
+import Mockman from "mockman-js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Routes, Route } from 'react-router-dom'
+import { MainContainer } from "./component/MainContainer/MainContainer";
+import Home from "./pages/Home/Home";
+import LoginPage from "./pages/Home/AuthPage/LoginPage";
+import SignupPage from "./pages/Home/AuthPage/SignupPage";
+import PrivateRoute from './component/private-route/PrivateRoute'
+import RestrictedRoute from './component/restricted-route/RestrictedRoute';
 
 function App() {
+
   return (
-    <div>Social media app</div>
+    <div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <Home />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route element={<RestrictedRoute />}>
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Route>
+        <Route path="mockman" element={<Mockman />} />
+      </Routes>
+      <ToastContainer
+        theme="colored"
+        autoClose={1500}
+        position={"top-right"}
+        className={"toast-container"}
+      />
+    </div>
   );
 }
 
