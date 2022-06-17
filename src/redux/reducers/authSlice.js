@@ -4,10 +4,8 @@ import { toast } from "react-toastify";
 const initialState = {
     loading: false,
     token: localStorage.getItem("token") || null,
-    user: localStorage.getItem("user") || null,
+    user: JSON.parse(localStorage.getItem("user")) || null,
 };
-
-console.log(initialState);
 
 export const login = createAsyncThunk(
     "auth/login",
@@ -29,8 +27,9 @@ export const signUp = createAsyncThunk(
     async (signUpDetails, { rejectWithValue }) => {
         try {
             const response = await axios.post("/api/auth/signup", {
-                firstName: signUpDetails.name,
+                firstName: signUpDetails.firstName,
                 username: signUpDetails.username,
+                email: signUpDetails.email,
                 password: signUpDetails.password,
             });
 
@@ -46,8 +45,8 @@ export const testLogin = createAsyncThunk(
     async (arg, { rejectWithValue }) => {
         try {
             const response = await axios.post("/api/auth/login", {
-                username: "admin@gmail.com",
-                password: "admin123",
+                username: "anshulraheja",
+                password: "Anshul@123",
             });
             return response.data;
         } catch (error) {
@@ -60,7 +59,6 @@ export const verify = createAsyncThunk(
     "auth/verify",
     async (arg, { rejectWithValue }) => {
         const encodedToken = localStorage.getItem("token");
-        console.log("verify", encodedToken)
         try {
             const response = await axios.post(
                 "/api/auth/verify",
@@ -71,7 +69,7 @@ export const verify = createAsyncThunk(
                     },
                 }
             );
-            console.log("response", response);
+
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response.data);
@@ -99,7 +97,7 @@ const authSlice = createSlice({
             .addCase(login.fulfilled, (state, action) => {
                 state.loading = false;
                 localStorage.setItem("token", action.payload.encodedToken);
-                localStorage.setItem("user", action.payload.foundUserfirstName);
+                localStorage.setItem("user", JSON.stringify(action.payload.foundUser));
                 state.user = action.payload.foundUser;
                 state.token = action.payload.encodedToken;
                 toast.success("Login Successful");
@@ -114,7 +112,7 @@ const authSlice = createSlice({
             .addCase(signUp.fulfilled, (state, action) => {
                 state.loading = false;
                 localStorage.setItem("token", action.payload.encodedToken);
-                localStorage.setItem("user", action.payload.createdUser.firstName);
+                localStorage.setItem("user", JSON.stringify(action.payload.createdUser));
                 state.user = action.payload.createdUser;
                 state.token = action.payload.encodedToken;
                 toast.success("Signup Successful");
@@ -127,10 +125,9 @@ const authSlice = createSlice({
                 state.loading = true;
             })
             .addCase(testLogin.fulfilled, (state, action) => {
-                console.log(action.payload.foundUser);
                 state.loading = false;
                 localStorage.setItem("token", action.payload.encodedToken);
-                localStorage.setItem("user", action.payload.foundUser.firstName);
+                localStorage.setItem("user", JSON.stringify(action.payload.foundUser));
                 state.user = action.payload.foundUser;
                 state.token = action.payload.encodedToken;
                 toast.success("Login Successful");

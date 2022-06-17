@@ -8,10 +8,10 @@ const SignupPage = () => {
     const dispatch = useDispatch();
     const [signUpData, setSignUpData] = useState({
         name: "",
+        email: "",
         username: "",
         password: "",
         confirmpassword: "",
-        terms: false
     });
 
     const inputHandler = (e) => {
@@ -49,8 +49,12 @@ const SignupPage = () => {
                         <input type="name" placeholder="Name" name="name" onChange={inputHandler} required />
                     </div>
                     <div>
-                        <label htmlFor="username">Email</label>
-                        <input type="email" placeholder="Email" name="username" onChange={inputHandler} required />
+                        <label htmlFor="email">Email</label>
+                        <input type="email" placeholder="Email" name="email" onChange={inputHandler} required />
+                    </div>
+                    <div>
+                        <label htmlFor="username">Username</label>
+                        <input type="text" placeholder="Username" name="username" onChange={inputHandler} required />
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>

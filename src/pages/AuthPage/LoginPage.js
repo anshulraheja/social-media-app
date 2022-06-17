@@ -29,8 +29,8 @@ const LoginPage = () => {
                 <form className="login-form" onSubmit={(e) => { e.preventDefault(); dispatch(login(loginData)) }}>
                     <h3 className="login-header" >Login</h3>
                     <div>
-                        <label htmlFor="username">Email</label>
-                        <input type="email" name="username" placeholder="admin@gmail.com" id="email" onChange={inputHandler} required />
+                        <label htmlFor="username">Username</label>
+                        <input type="text" name="username" placeholder="admin@gmail.com" id="email" onChange={inputHandler} required />
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>
