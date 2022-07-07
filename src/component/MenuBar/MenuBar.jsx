@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import { logout } from '../../redux/reducers/authSlice';
 import { useDispatch } from 'react-redux';
+import {openPostModal} from '../../redux/reducers/postModalSlice'
+
 const MenuBar = () => {
     const dispatch = useDispatch();
   return (
@@ -19,7 +21,7 @@ const MenuBar = () => {
             <p>Profile</p>
         </Link>
         <button onClick={() => dispatch(logout())}>Logout</button>
-        <button>Create POST</button>
+        <button onClick={() => dispatch(openPostModal())}>Create POST</button>
     </div>
   )
 }

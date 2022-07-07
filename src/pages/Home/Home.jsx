@@ -1,5 +1,7 @@
-import {useState} from 'react';
-
+import {useState, useEffect} from 'react';
+import {  useDispatch, useSelector } from "react-redux";
+import SinglePost from '../../component/SinglePost/SinglePost';
+import {getPosts} from '../../redux/reducers/postsSlice';
 const Home = () => {
   const [postSort, setPostSort] = useState("Lastest");
   const sortOptions = [
@@ -7,6 +9,13 @@ const Home = () => {
     {label: "Trending", value: "trending"},
     {label: "Oldest Post", value: "oldest_post"}
   ]
+  const posts = useSelector((state) => state.posts.posts);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getPosts());
+  },[]);
+
   return (
     <div>
       <div>
@@ -21,14 +30,9 @@ const Home = () => {
       </select>
 
       <div>
-        <h2>Anshul Raheja</h2>
-        <h4>@anshulrahejaa</h4>
-        <h5>2022/4/23 10:30am</h5>
-        <button>option</button>
-        <p>This is the tweet</p>
-        <button>Like</button>
-        <button>Bookmark</button>
-        <button>Comment</button>
+          {posts.map((post) => (
+            <SinglePost post={post}/> 
+          ))}
       </div>
     </div>
     </div>

@@ -15,7 +15,7 @@ const sign = require("jwt-encode");
  * */
 
 export const signupHandler = function (schema, request) {
-  const { username, password, firstName, email, ...rest } =
+  const { username, password, firstName, lastName, email, ...rest } =
     JSON.parse(request.requestBody);
 
   try {
@@ -39,6 +39,7 @@ export const signupHandler = function (schema, request) {
       username,
       password,
       firstName,
+      lastName,
       email,
       ...rest,
       followers: [],

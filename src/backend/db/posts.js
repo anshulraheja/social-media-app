@@ -9,69 +9,628 @@ import { formatDate } from "../utils/authUtils";
 export const posts = [
   {
     _id: uuid(),
-    content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    firstName: "Anshul",
+    lastName: "Sarna",
+    username: "anshulraheja",
+    profilePhoto:
+      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+    content: `toote hue dil se hi #code nikalta hai 🚀🧑‍💻.`,
+    postImage:
+      "https://res.cloudinary.com/ms-inc/image/upload/v1652984625/t-3_ubmooi.webp",
     likes: {
-      likeCount: 0,
-      likedBy: [],
+      likeCount: 4,
+      likedBy: [
+        {
+          firstName: "Holly",
+          lastName: "Jackson",
+          username: "hollyjackson",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+        },
+        {
+          firstName: "Frank",
+          lastName: "Hill",
+          username: "frankhill",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+        },
+        {
+          firstName: "Jesse",
+          lastName: "Green",
+          username: "jessegreen",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+        },
+        {
+          firstName: "Walter",
+          lastName: "White",
+          username: "walterwhite",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+        },
+      ],
       dislikedBy: [],
     },
-    username: "adarshbalika",
-    createdAt: formatDate(),
+    createdAt: new Date("20 May 2022 11:58:15 PM"),
     updatedAt: formatDate(),
     comments: [
       {
         _id: uuid(),
-        username: "shubhamsoni",
-        text: "Interesting",
+        firstName: "Holly",
+        lastName: "Jackson",
+        username: "hollyjackson",
+        profilePhoto:
+          "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+        text: "testing comment",
         votes: {
           upvotedBy: [],
           downvotedBy: [],
         },
+        createdAt: new Date("20 May 2022 10:11:15 PM"),
       },
       {
         _id: uuid(),
-        username: "sohamshah",
-        text: "Wow!",
+        firstName: "Frank",
+        lastName: "Hill",
+        username: "frankhill",
+        profilePhoto:
+          "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+        text: "testing comment",
         votes: {
           upvotedBy: [],
           downvotedBy: [],
         },
+        createdAt: new Date("20 May 2022 10:11:15 PM"),
       },
     ],
   },
   {
     _id: uuid(),
     content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.",
     likes: {
-      likeCount: 0,
-      likedBy: [],
+      likeCount: 1,
+      likedBy: [
+        {
+          firstName: "Anshul",
+          lastName: "Sarna",
+          username: "anshulraheja",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+        },
+      ],
       dislikedBy: [],
     },
-    username: "shubhamsoni",
-
-    comments: [
-      {
-        _id: uuid(),
-        username: "shubhamsoni",
-        text: "Interesting",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-      {
-        _id: uuid(),
-        username: "sohamshah",
-        text: "Wow!",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-    ],
-    createdAt: formatDate(),
+    username: "hollyjackson",
+    firstName: "Holly",
+    lastName: "Jackson",
+    createdAt: new Date("May 10 2022 04:15:43 PM"),
     updatedAt: formatDate(),
+    profilePhoto:
+      "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+    comments: [],
   },
+  {
+    _id: uuid(),
+    content: "Great work on the new post ",
+    likes: {
+      likeCount: 4,
+      likedBy: [
+        {
+          _id: uuid(),
+          firstName: "Holly",
+          lastName: "Jackson",
+          username: "hollyjackson",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+        },
+        {
+          firstName: "Frank",
+          lastName: "Hill",
+          username: "frankhill",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+        },
+        {
+          firstName: "Jesse",
+          lastName: "Green",
+          username: "jessegreen",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+        },
+
+        {
+          _id: uuid(),
+          firstName: "Walter",
+          lastName: "White",
+          username: "walterwhite",
+          profilePhoto:
+            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+        },
+      ],
+      dislikedBy: [],
+    },
+    firstName: "Frank",
+    lastName: "Hill",
+    username: "frankhill",
+    createdAt: new Date("May 12 2022 04:15:43 PM"),
+    updatedAt: formatDate(),
+    profilePhoto:
+      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+    comments: [],
+  },
+  // {
+  //   _id: uuid(),
+  //   content: "Everybody is riding the web3 wave.",
+  //   likes: {
+  //     likeCount: 1,
+  //     likedBy: [
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   username: "anshulraheja",
+  //   firstName: "Anshul",
+  //   lastName: "Sarna",
+  //   createdAt: new Date("May 15 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "Testing Post 12",
+  //   likes: {
+  //     likeCount: 2,
+  //     likedBy: [
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Jesse",
+  //   lastName: "Green",
+  //   username: "jessegreen",
+  //   createdAt: new Date("May 16 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "Javascript is love!!",
+  //   likes: {
+  //     likeCount: 4,
+  //     likedBy: [
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //       {
+  //         firstName: "Jesse",
+  //         lastName: "Green",
+  //         username: "jessegreen",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //       },
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Walter",
+  //   lastName: "White",
+  //   username: "walterwhite",
+  //   createdAt: new Date("May 13 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "PrepInTech",
+  //   postImage:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1653075765/Screenshot_2022-05-09_201932_zww3eq.jpg",
+  //   likes: {
+  //     likeCount: 4,
+  //     likedBy: [
+  //       {
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //       {
+  //         firstName: "Jesse",
+  //         lastName: "Green",
+  //         username: "jessegreen",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //       },
+
+  //       {
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   username: "anshulraheja",
+  //   firstName: "Anshul",
+  //   lastName: "Sarna",
+  //   createdAt: new Date("May 17 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //   comments: [],
+  // },
+
+  // {
+  //   _id: uuid(),
+  //   content: "testing post 123",
+  //   likes: {
+  //     likeCount: 1,
+  //     likedBy: [
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   username: "anshulraheja",
+  //   firstName: "Anshul",
+  //   lastName: "Sarna",
+  //   createdAt: new Date("May 11 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "testing post 189",
+  //   likes: {
+  //     likeCount: 3,
+  //     likedBy: [
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //       {
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Jesse",
+  //   lastName: "Green",
+  //   username: "jessegreen",
+  //   createdAt: new Date("May 09 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "testing post 12323",
+  //   likes: {
+  //     likeCount: 2,
+  //     likedBy: [
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //       {
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Holly",
+  //   lastName: "Jackson",
+  //   username: "hollyjackson",
+  //   createdAt: new Date("May 15 2022 05:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //   comments: [],
+  // },
+
+  // {
+  //   _id: uuid(),
+  //   content: "tesing post 345",
+  //   likes: {
+  //     likeCount: 4,
+  //     likedBy: [
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //       {
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //       {
+  //         firstName: "Jesse",
+  //         lastName: "Green",
+  //         username: "jessegreen",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Frank",
+  //   lastName: "Hill",
+  //   username: "frankhill",
+  //   createdAt: new Date("May 07 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "Say My Name !!",
+  //   likes: {
+  //     likeCount: 1,
+  //     likedBy: [
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Walter",
+  //   lastName: "White",
+  //   username: "walterwhite",
+  //   createdAt: new Date("May 11 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "testing post 5697",
+  //   likes: {
+  //     likeCount: 4,
+  //     likedBy: [
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //       {
+  //         firstName: "Jesse",
+  //         lastName: "Green",
+  //         username: "jessegreen",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //       },
+
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Frank",
+  //   lastName: "Hill",
+  //   username: "frankhill",
+  //   createdAt: new Date("May 03 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "testing one 1",
+  //   likes: {
+  //     likeCount: 2,
+  //     likedBy: [
+  //       {
+  //         _id: uuid(),
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //       {
+  //         firstName: "Frank",
+  //         lastName: "Hill",
+  //         username: "frankhill",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   username: "anshulraheja",
+  //   firstName: "Anshul",
+  //   lastName: "Sarna",
+  //   createdAt: new Date("May 02 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //   comments: [],
+  // },
+  // {
+  //   _id: uuid(),
+  //   content: "testing post 1299",
+  //   likes: {
+  //     likeCount: 3000,
+  //     likedBy: [
+  //       {
+  //         firstName: "Jesse",
+  //         lastName: "Green",
+  //         username: "jessegreen",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+  //       },
+  //       {
+  //         firstName: "Anshul",
+  //         lastName: "Sarna",
+  //         username: "anshulraheja",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+  //       },
+  //       {
+  //         firstName: "Holly",
+  //         lastName: "Jackson",
+  //         username: "hollyjackson",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+
+  //   firstName: "Frank",
+  //   lastName: "Hill",
+  //   username: "frankhill",
+  //   createdAt: new Date("May 18 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+  //   comments: [],
+  // },
+
+  // {
+  //   _id: uuid(),
+  //   content: "Testing testing testing",
+  //   likes: {
+  //     likeCount: 1,
+  //     likedBy: [
+  //       {
+  //         firstName: "Walter",
+  //         lastName: "White",
+  //         username: "walterwhite",
+  //         profilePhoto:
+  //           "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+  //       },
+  //     ],
+  //     dislikedBy: [],
+  //   },
+  //   firstName: "Holly",
+  //   lastName: "Jackson",
+  //   username: "hollyjackson",
+  //   createdAt: new Date("May 01 2022 04:15:43 PM"),
+  //   updatedAt: formatDate(),
+  //   profilePhoto:
+  //     "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+  //   comments: [],
+  // },
 ];
