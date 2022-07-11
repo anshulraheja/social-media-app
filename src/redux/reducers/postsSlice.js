@@ -14,7 +14,6 @@ export const getPosts = createAsyncThunk(
     "posts/getPosts",
     async (arg, { rejectWithValue }) => {
         try {
-
             const response = await axios.get("/api/posts");
             return response.data;
         } catch (error) {
@@ -34,6 +33,7 @@ export const createPost = createAsyncThunk(
                 { postData: post },
                 { headers: { authorization: encodedToken } }
             );
+
             return response.data;
         } catch (error) {
             return rejectWithValue(`${error.response.data.errors}`);
@@ -160,7 +160,6 @@ export const deletePost = createAsyncThunk(
 export const postComment = createAsyncThunk(
     "posts/postComment",
     async ({ postId, commentData }, { rejectWithValue }) => {
-        console.log("postId, commentData", postId, commentData);
         try {
             const encodedToken = localStorage.getItem("token");
             const response = await axios.post(

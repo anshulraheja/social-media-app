@@ -7,10 +7,10 @@ export function MainContainer({ children }) {
     <div>
       <MenuBar />
       <div>
-        <SearchBar />
+        {/* <SearchBar /> */}
         <div>{children}</div>
       </div>
-      <FollowBar />
+      {/* <FollowBar /> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://use.fontawesome.com/releases/v6.0.0/css/all.css');
+@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 :root{
     --COLOR-BACKGROUND-GREY: #f5f5f5;
     --COLOR-NOTIFICATION: #77d0ed;
