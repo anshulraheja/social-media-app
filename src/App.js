@@ -14,6 +14,7 @@ import { getUsers } from "./redux/reducers/usersSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { PostComment } from './pages/PostComment/PostComment'
+import { Bookmarks } from "./pages/Bookmarks/Bookmarks";
 function App() {
   const dispatch = useDispatch();
 
@@ -43,6 +44,16 @@ function App() {
             <PrivateRoute>
               <MainContainer>
                 <PostComment />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/bookmarks"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <Bookmarks />
               </MainContainer>
             </PrivateRoute>
           }

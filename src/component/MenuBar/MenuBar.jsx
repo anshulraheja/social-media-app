@@ -14,7 +14,7 @@ const MenuBar = () => {
         <Link to="/explore">
             <p>Explore</p>
         </Link>
-        <Link to="/bookmark">
+        <Link to="/bookmarks">
             <p>Bookmark</p>
         </Link>
         <Link to="/profile">
