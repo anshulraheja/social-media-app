@@ -13,7 +13,7 @@ import { getPosts } from "./redux/reducers/postsSlice";
 import { getUsers } from "./redux/reducers/usersSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-
+import { PostComment } from './pages/PostComment/PostComment'
 function App() {
   const dispatch = useDispatch();
 
@@ -37,6 +37,23 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route
+          path="/:username/:postId"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <PostComment />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        {/* <Route element={<PrivateRoute />}>
+          <Route element={<MainContainer />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/:username/:postId" element={<PostComment />} />
+          </Route>
+        </Route> */}
+
         <Route element={<RestrictedRoute />}>
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
