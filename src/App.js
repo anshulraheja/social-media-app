@@ -15,6 +15,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { PostComment } from './pages/PostComment/PostComment'
 import { Bookmarks } from "./pages/Bookmarks/Bookmarks";
+import { Explore } from "./pages/Explore/Explore";
 function App() {
   const dispatch = useDispatch();
 
@@ -54,6 +55,16 @@ function App() {
             <PrivateRoute>
               <MainContainer>
                 <Bookmarks />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/explore"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <Explore />
               </MainContainer>
             </PrivateRoute>
           }
