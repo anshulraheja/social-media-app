@@ -9,36 +9,36 @@ export function CommentCard({ postId, comment }) {
   const dispatch = useDispatch();
 
   return (
-    <div className="sm-single-comment-container">
-      <Link to={`/${comment.username}`} className="sm-home-avatar">
+    <div className="single-comment-container">
+      <Link to={`/${comment.username}`} className="home-avatar">
         <div title="Go To Profile">
           <div className="avatar avatar-hover s-s ">
             {/* <img src={`${comment.profilePhoto}`} alt="" /> */}
           </div>
         </div>
       </Link>
-      <div className="sm-single-post-content">
-        <div className="sm-post-user-info-date">
+      <div className="single-post-content">
+        <div className="post-user-info-date">
           <Link
             to={`/${comment.username}`}
-            className="sm-remove-link-props"
+            className="remove-link-props"
             title="Go To Profile"
           >
-            <span className="sm-post-name">{`${comment.firstName} ${comment.lastName} `}</span>
-            <span className="sm-post-username">{`  @${comment.username} `}</span>
+            <span className="post-name">{`${comment.firstName} ${comment.lastName} `}</span>
+            <span className="post-username">{`  @${comment.username} `}</span>
           </Link>
-          <span className="sm-dot-separator"></span>
+          <span className="dot-separator"></span>
           <span
-            className="sm-post-date"
+            className="post-date"
             title={dayjs(comment.createdAt).format("MMM DD,YYYY hh:mm A")}
           >{dayjs(comment.createdAt).format("MMM DD,YYYY")}</span>
         </div>
-        <div className="sm-post-content-container">
-          <span className="sm-post-content">{comment.text}</span>
+        <div className="post-content-container">
+          <span className="post-content">{comment.text}</span>
         </div>
       </div>
       <div
-        className="sm-comment-delete-btn"
+        className="comment-delete-btn"
         onClick={() => {
           dispatch(
             deleteComment({

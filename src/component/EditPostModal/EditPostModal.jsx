@@ -7,25 +7,25 @@ export function EditPostModal({ showEditModal, setShowEditModal, post }) {
   const dispatch = useDispatch();
   return (
     <div
-      className={`sm-modal-main ${showEditModal ? "sm-modal-main-show" : ""}`}
+      className={`modal-main ${showEditModal ? "modal-main-show" : ""}`}
     >
-      <div className="sm-modal-content">
+      <div className="modal-content">
         <button
           id="btn btn-primary"
-          className="sm-card-dismiss"
+          className="card-dismiss"
           title="Dismiss"
           onClick={() => setShowEditModal((p) => !p)}
         >
           <i className="fas fa-times"></i>
         </button>
-        <div className="sm-modal-title fw-700"> Edit Post Content</div>
+        <div className="modal-title fw-700"> Edit Post Content</div>
 
-        <div className="sm-home-new-post-conatiner">
+        <div className="home-new-post-conatiner">
           <textarea
             type="text"
             autoFocus
             rows="4"
-            className="sm-home-text-area"
+            className="home-text-area"
             value={updatedPost.content}
             onChange={(e) =>
               setUpdatedPost((prev) => ({ content: e.target.value }))
