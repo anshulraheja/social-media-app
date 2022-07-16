@@ -1,11 +1,16 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import { logout } from '../../redux/reducers/authSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch , useSelector } from 'react-redux';
 import {openPostModal} from '../../redux/reducers/postModalSlice'
 
 const MenuBar = () => {
     const dispatch = useDispatch();
+  const user = useSelector((state) => state.auth.user);
+  const allUsers = useSelector((state) => state.users.users);
+  const loginUserDetails = allUsers.find(
+    (item) => item.username === user?.username
+  );
   return (
     <div>
         <Link to="/">
@@ -17,7 +22,7 @@ const MenuBar = () => {
         <Link to="/bookmarks">
             <p>Bookmark</p>
         </Link>
-        <Link to="/profile">
+        <Link to={`/${loginUserDetails?.username}`}>
             <p>Profile</p>
         </Link>
         <button onClick={() => dispatch(logout())}>Logout</button>

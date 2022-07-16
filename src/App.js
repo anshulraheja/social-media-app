@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import { PostComment } from './pages/PostComment/PostComment'
 import { Bookmarks } from "./pages/Bookmarks/Bookmarks";
 import { Explore } from "./pages/Explore/Explore";
+import { User } from "./pages/User/User";
 function App() {
   const dispatch = useDispatch();
 
@@ -65,6 +66,16 @@ function App() {
             <PrivateRoute>
               <MainContainer>
                 <Explore />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/:username"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <User />
               </MainContainer>
             </PrivateRoute>
           }
