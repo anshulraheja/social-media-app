@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 import { logout } from '../../redux/reducers/authSlice';
 import { useDispatch , useSelector } from 'react-redux';
 import {openPostModal} from '../../redux/reducers/postModalSlice'
+import CreatePostModal from '../CreatePostModal/CreatePostModal';
 
 const MenuBar = () => {
     const dispatch = useDispatch();
@@ -11,7 +12,9 @@ const MenuBar = () => {
   const loginUserDetails = allUsers.find(
     (item) => item.username === user?.username
   );
+  const [openCreatePost, setOpenCreatePost] = useState(false)
   return (
+
     <div>
         <Link to="/">
             <p>Feed</p>
@@ -26,7 +29,8 @@ const MenuBar = () => {
             <p>Profile</p>
         </Link>
         <button onClick={() => dispatch(logout())}>Logout</button>
-        <button onClick={() => dispatch(openPostModal())}>Create POST</button>
+        <button onClick={() => setOpenCreatePost(true)}>Create POST</button>
+        {openCreatePost && <CreatePostModal setOpenCreatePost={setOpenCreatePost}/>}
     </div>
   )
 }

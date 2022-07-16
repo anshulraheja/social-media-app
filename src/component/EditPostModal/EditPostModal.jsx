@@ -4,7 +4,6 @@ import { editPost } from "../../redux/reducers/postsSlice";
 
 export function EditPostModal({ showEditModal, setShowEditModal, post }) {
   const [updatedPost, setUpdatedPost] = useState({ ...post });
-  console.log("updatedPost", updatedPost);
   const dispatch = useDispatch();
   return (
     <div
