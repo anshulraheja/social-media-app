@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { Response } from "miragejs";
-import { formatDate } from "../utils/authUtils";
+import { formatDate, requiresAuth } from "../utils/authUtils";
 const sign = require("jwt-encode");
 
 /**
@@ -15,7 +15,9 @@ const sign = require("jwt-encode");
  * */
 
 export const signupHandler = function (schema, request) {
-  const { username, password, ...rest } = JSON.parse(request.requestBody);
+  const { username, password, firstName, lastName, email, ...rest } =
+    JSON.parse(request.requestBody);
+
   try {
     // check if username already exists
     const foundUser = schema.users.findBy({ username: username });
@@ -36,12 +38,21 @@ export const signupHandler = function (schema, request) {
       updatedAt: formatDate(),
       username,
       password,
+      firstName,
+      lastName,
+      email,
       ...rest,
       followers: [],
       following: [],
       bookmarks: [],
+      bio: "",
+      website: "",
+      profilePhoto:
+        "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      coverPhoto: "",
     };
     const createdUser = schema.users.create(newUser);
+
     const encodedToken = sign(
       { _id, username },
       process.env.REACT_APP_JWT_SECRET
@@ -95,6 +106,28 @@ export const loginHandler = function (schema, request) {
         ],
       }
     );
+  } catch (error) {
+    return new Response(
+      500,
+      {},
+      {
+        error,
+      }
+    );
+  }
+};
+
+export const verifyUser = function (schema, request) {
+  const user = requiresAuth.call(this, request);
+  try {
+    if (!user) {
+      return new Response(
+        404,
+        {},
+        { result: "User Not available / Token not valid" }
+      );
+    }
+    return new Response(200, {}, { user });
   } catch (error) {
     return new Response(
       500,

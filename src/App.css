@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.0.0/css/all.css');
+@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+:root{
+    --COLOR-BACKGROUND-GREY: #f5f5f5;
+    --COLOR-NOTIFICATION: #77d0ed;
+    --DESCREIPTION-CONTENT-SUBTITLE: #757575;
+    
+    --COLOR-WHITE: #FFFFFF;
+    --COLOR-BLACK: #111111;
+    --COLOR-SECONDARY: GREY;
+
+    --COLOR-BODY: #F4F4F4;
+
+    --COLOR-HEADER-BKGD: #1C1C1C;
+    --COLOR-SEARCH-BAR: #2A2A2A;
+    --COLOR-HEADER-TEXT: #DBDBDB;
+
+    --COLOR-CATEGORY-BKGD: #e6e6e6;
+    --COLOR-CATEGORY-CARD-BKGD: #383838;
+    --COLOR-ADDTOCART: #228B22;
+    
+    
+    --COLOR-PRODUCT-CARD-BKGD: #DFDFDF;
+   
+
+    --COLOR-WISHLIST: #ff2a2a;
+    --COLOR-FORGET-PASSWORD: #3B82F6;
+    --COLOR-BTN-LOGIN: #477644;
+    --COLOR-BTN-GOOGLE-TEXT: #757575 ;
+    --COLOR-BTN-FB: #4267b2;
+    --COLOR-WHITE: #FFFFFF;
+    --COLOR-BLACK: #000000;
+    --COLOR-GREY: GREY;
+
+    --COLOR-BODY: #007bff;
+
+    --COLOR-TITLE-TEXT: #4b126f;
+
+    --COLOR-CATEGORY-INFO: #434242;
+
+    --COLOR-BORDER: #d3d3d3;
+    --COLOR-BTN-QUIZ: #ed0808;
+
+    --COLOR-BTN-NEXT-QUESTION: #0263ca;
+    --COLOR-TIMER-TEXT: #004085;
+    --COLOR-TIMER-BKGD: #cce5ff;
+    --COLOR-TIMER-BORDER: #b8daff;
+    --COLOR-OPTION-BKGD: #f0f8ff;
+    --COLOR-OPTION-BORDER: #84c5fe;
+    --COLOR-OPTION-CORRECT-TEXT: #155724;
+    --COLOR-OPTION-CORRECT-BKGD: #d4edda ;
+    --COLOR-OPTION-CORRECT-BORDER: #c3e6cb ;
+    --COLOR-OPTION-INCORRECT-TEXT: #721c24 ;
+    --COLOR-OPTION-INCORRECT-BKGD: #f8d7da ;
+    --COLOR-OPTION-INCORRECT-BORDER: #f5c6cb ;
+
+    --COLOR-BTN_QUIT: #ef5f5f;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+}
+button{
+    cursor: pointer;
+    /* border: none; */
+}
+a{ 
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
