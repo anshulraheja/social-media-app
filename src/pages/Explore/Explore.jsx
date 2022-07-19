@@ -11,16 +11,14 @@ export function Explore() {
   );
 
   return (
-    <main className="main">
-      <div className="content-area">
-        <div className="main-user-explore-container">
-          <div className="home-top">
+    <main className="main-homepage-container">
+      <div className="explore-area">
+          <div className="explore-top">
             <p className="main-heading">Explore</p>
           </div>
           {finalPosts.map((post) => (
             <SinglePost key={post._id} post={post} />
           ))}
-        </div>
       </div>
       {loading && (
         <div className="react-loader-spinner">

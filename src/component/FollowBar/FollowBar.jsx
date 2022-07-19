@@ -18,8 +18,8 @@ export default function FollowBar() {
     .slice(0, 5);
 
   return (
-    <aside className="right-sidebar">
-      <div className="right-sidebar-container">
+    <aside className="followbar">
+      <div className="followbar-container">
         <h3>Suggestions</h3>
         <div className="suggested-users-container">
           {suggestedUsers.map((user) => (

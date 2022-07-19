@@ -1,0 +1,33 @@
+.single-post-container{
+    border: 1px solid;
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.profile-img-container{
+    width: 50px;
+}
+.profile-img-container > img {
+    border-radius: 50%;
+}
+.single-post-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+}
+.post-user-info-date {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.post-date{
+    color: grey;
+    font-size: 0.75rem;
+}
+.post-cta-container{
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}

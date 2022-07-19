@@ -10,7 +10,7 @@ import {
   FaEdit,
 } from "react-icons/fa/";
 import { MdDelete } from "react-icons/md/";
-
+import './SinglePost.css'
 import { formatNumber } from "../../hooks/formatNumber";
 import {
   addToBookmarks,
@@ -50,15 +50,15 @@ export default function SinglePost({ post }) {
     <div className="single-post-container">
       <Link to={`/${post.username}`} className="home-avatar">
         <div title="Go To Profile">
-          <div className="avatar avatar-hover s-s ">
-            {/* <img
+          <div className="profile-img-container">
+            <img
               src={
                 post.username === loginUserDetails?.username
                   ? loginUserDetails?.profilePhoto
                   : post.profilePhoto
               }
-              alt=""
-            /> */}
+              alt="profile-pic"
+            />
           </div>
         </div>
       </Link>
@@ -70,9 +70,8 @@ export default function SinglePost({ post }) {
             title="Go To Profile"
           >
             <span className="post-name">{`${post.firstName} ${post.lastName} `}</span>
-            <span className="post-username">{`  @${post.username} `}</span>
+            <span className="post-username">{`  @${post.username} ${"-"}`}</span>
           </Link>
-          <span className="dot-separator"></span>
           <span
             className="post-date"
             title={dayjs(post.createdAt).format("MMM DD,YYYY hh:mm A")}
@@ -82,11 +81,6 @@ export default function SinglePost({ post }) {
         </div>
         <div className="post-content-container">
           <span className="post-content">{post.content}</span>
-          {post.postImage && (
-            <div className="post-content-image-container">
-              {/* <img src={post.postImage} alt="" /> */}
-            </div>
-          )}
         </div>
         <div className="post-cta-container">
           <Link to={`/${user.username}/${post._id}`} className="comment-cta">

@@ -1,0 +1,21 @@
+.main-homepage-container{
+    /* background: aqua; */
+    padding: 0.5rem;
+}
+.homepage-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.home-top{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main-heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.home-select-sort{
+    align-self: flex-end;
+}

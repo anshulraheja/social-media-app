@@ -16,46 +16,17 @@ export default function Home() {
   const loading = useSelector((state) => state.posts.loading);
 
   const [isLoading, setIsLoading] = useState(false);
-
-
   
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts.posts);
   let sortBy = useSelector((state) => state.posts.sortBy);
 
-  // const cloudinaryPost = async (postDetails) => {
-  //   const data = new FormData();
-  //   data.append("file", postDetails.postImage);
-  //   data.append(
-  //     "upload_preset",
-  //     process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
-  //   );
-  //   const requestOptions = {
-  //     method: "POST",
-  //     body: data,
-  //   };
-  //   setIsLoading(true);
-  //   await fetch(process.env.REACT_APP_CLOUDINARY_API_URL, requestOptions)
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       dispatch(
-  //         createPost({ content: postDetails.content, postImage: json.url })
-  //       );
-  //       setIsLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       toast.error(error);
-  //     });
-  // };
-
-
 
   let finalPosts = sortPosts(posts, sortBy);
 
   return (
-    <main className="main">
-      <div className="content-area">
-        <div className="main-user-homepage-container">
+    <main className="main-homepage-container">
+        <div className="homepage-content">
           <div className="home-top">
             <p className="main-heading">Home</p>
             <select
@@ -72,17 +43,12 @@ export default function Home() {
               <option value="Oldest">Oldest Posts</option>
             </select>
           </div>
-
-          {/* CreatePost Modal  */}
-            <CreatePostModal 
-            />
-{/* End  */}
+            <CreatePostModal />
 
           {finalPosts.map((post) => (
             <SinglePost key={post._id} post={post} />
           ))}
         </div>
-      </div>
       {(isLoading || loading) && (
         <div className="react-loader-spinner">
           <Loader />

@@ -3,30 +3,11 @@ import { useDispatch } from "react-redux";
 import { MdImage } from "react-icons/md/";
 import { updateUser } from "../../redux/reducers/usersSlice";
 import { toast } from "react-toastify";
-
+import './EditUserProfile.css'
 export function EditUserProfile({ showEditProfile, setShowEditProfile, user }) {
   const [updateUserDetails, setUpdateUserDetails] = useState({ ...user });
   const dispatch = useDispatch();
-  const uploadImage = async (avatarImage) => {
-    const data = new FormData();
-    data.append("file", avatarImage);
-    data.append(
-      "upload_preset",
-      process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
-    );
-    const requestOptions = {
-      method: "POST",
-      body: data,
-    };
-    await fetch(process.env.REACT_APP_CLOUDINARY_API_URL, requestOptions)
-      .then((response) => response.json())
-      .then((json) => {
-        setUpdateUserDetails((prev) => ({ ...prev, profilePhoto: json.url }));
-      })
-      .catch((error) => {
-        toast.error(error);
-      });
-  };
+
   const updateHandler = () => {
     dispatch(updateUser(updateUserDetails));
   };
@@ -47,23 +28,9 @@ export function EditUserProfile({ showEditProfile, setShowEditProfile, user }) {
         <div className="modal-title fw-700">
           {`Edit ${user?.firstName} ${user?.lastName}'s Profile`}{" "}
         </div>
-        <div className="home-new-edit-post-conatiner">
-          <div className="avatar avatar-badge s-xl">
-            {/* <img src={`${updateUserDetails.profilePhoto}`} alt="" /> */}
-            <label
-              className="av-badge bd-green bd-xxl bd-bottom-right"
-              htmlFor="postImage"
-              title="Click To Upload Image"
-            >
-              <MdImage />
-            </label>
-            <input
-              type="file"
-              id="postImage"
-              accept="image/*"
-              hidden
-              onChange={(e) => uploadImage(e.target.files[0])}
-            />
+        <div className="home-new-edit-post-container">
+          <div className="edit-profile-img-container">
+            <img src={`${updateUserDetails.profilePhoto}`} alt="" />
           </div>
 
           <div className="user-profile-content">
@@ -95,7 +62,7 @@ export function EditUserProfile({ showEditProfile, setShowEditProfile, user }) {
             />
           </div>
           <button
-            className="btn btn-primary btn-bold btn-round "
+            className="btn-update-profile"
             title="Update Profile"
             onClick={() => {
               updateHandler();
