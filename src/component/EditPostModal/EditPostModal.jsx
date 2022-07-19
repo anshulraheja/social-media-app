@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { editPost } from "../../redux/reducers/postsSlice";
-
+import './EditPostModal.css'
 export function EditPostModal({ showEditModal, setShowEditModal, post }) {
   const [updatedPost, setUpdatedPost] = useState({ ...post });
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ export function EditPostModal({ showEditModal, setShowEditModal, post }) {
         </button>
         <div className="modal-title fw-700"> Edit Post Content</div>
 
-        <div className="home-new-post-conatiner">
+        <div className="home-new-post-container">
           <textarea
             type="text"
             autoFocus
@@ -32,7 +32,7 @@ export function EditPostModal({ showEditModal, setShowEditModal, post }) {
             }
           ></textarea>{" "}
           <button
-            className="btn btn-primary btn-bold btn-round "
+            className="btn-modal-post"
             title="Post It!!"
             disabled={updatedPost.content === "" ? true : false}
             onClick={() => {

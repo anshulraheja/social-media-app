@@ -47,8 +47,8 @@ export function User() {
   }, [currentUser, dispatch, navigate, allPosts]);
 
   return (
-    <main className="main">
-      <div className="content-area">
+    <main className="main-homepage-container">
+      <div className="user-area">
         <div className="main-user-profile-container">
           <div className="main-user-profile">
             <p className="main-heading">
@@ -59,7 +59,7 @@ export function User() {
             {loginUserDetails?.username === profileUser?.username ? (
               <div className="user-profile-cta">
                 <button
-                  className="category-outline-btn active"
+                  className="btn-profile-cta"
                   title="Edit Profile"
                   onClick={() => {
                     setShowEditProfile((p) => !p);
@@ -68,7 +68,7 @@ export function User() {
                   <i className="fas fa-edit"></i>
                 </button>
                 <button
-                  className="category-outline-btn active"
+                  className="btn-profile-cta"
                   title="Share Profile"
                   onClick={(e) => {
                     e.preventDefault();
@@ -81,7 +81,7 @@ export function User() {
                   <i className="fas fa-share-alt"></i>
                 </button>
                 <button
-                  className="category-outline-btn active"
+                  className="btn-profile-cta"
                   title="Logout Now"
                   onClick={() => dispatch(logout())}
                 >
@@ -122,7 +122,7 @@ export function User() {
 
           <div className="user-profile-main">
             <div className="avatar avatar-hover s-xl">
-              {/* <img src={`${currentUser?.profilePhoto}`} alt="" /> */}
+              <img src={`${currentUser?.profilePhoto}`} alt="" />
             </div>
             <div className="user-profile-content">
               <div className="user-profile-content-username">{`@${currentUser?.username}`}</div>

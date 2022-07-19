@@ -10,9 +10,8 @@ export function Bookmarks() {
     bookmarks.find((id) => post._id === id)
   );
   return (
-    <main className="main">
-      <div className="content-area">
-        <div className="main-user-bookmarks-container">
+    <main className="main-homepage-container">
+      <div className="bookmark-area">
           <div className="home-top">
             <p className="main-heading">Bookmarks</p>
           </div>
@@ -24,7 +23,6 @@ export function Bookmarks() {
           {bookmarkedPosts.map((post) => (
             <SinglePost key={post._id} post={post} />
           ))}
-        </div>
       </div>
       {loading && (
         <div className="react-loader-spinner">

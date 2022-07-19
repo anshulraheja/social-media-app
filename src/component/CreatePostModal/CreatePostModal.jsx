@@ -22,7 +22,6 @@ const CreatePostModal = (props) => {
         if (postDetails.content !== "") {
           if (postDetails.content.length > 5) {
             if (postDetails.postImage !== "") {
-              // cloudinaryPost(postDetails);
             } else {
               dispatch(createPost(postDetails));
             }
@@ -39,19 +38,19 @@ const CreatePostModal = (props) => {
       };
     
   return (
-    <div>
-         <div className="home-new-post-conatiner">
-            {setOpenCreatePost && <div onClick={() => setOpenCreatePost(false)}>X</div>}
+    <div className={`create-post-modal-container ${setOpenCreatePost && "post-modal"}`}>
+         <div className="home-new-post-container">
+            {setOpenCreatePost && <div onClick={() => setOpenCreatePost(false)} className="btn-create-modal-close">X</div>}
             <Link
               to={`/${loginUserDetails?.username}`}
               className="home-avatar"
             >
               <div title="Go To Profile">
-                <div className="avatar avatar-hover s-s ">
-                  {/* <img
+                <div className="create-modal-img-container ">
+                  <img
                     src={`${loginUserDetails?.profilePhoto}`}
-                    alt="lkj"
-                  /> */}
+                    alt=""
+                  />
                 </div>
               </div>
             </Link>
@@ -60,7 +59,7 @@ const CreatePostModal = (props) => {
               placeholder="What's Happening?"
               autoFocus
               rows="4"
-              className="home-text-area"
+              className="text-area"
               value={postDetails.content}
               onChange={(e) =>
                 setPostDetails((prev) => ({
@@ -70,49 +69,8 @@ const CreatePostModal = (props) => {
               }
             ></textarea>
           </div>
-          {/* {postDetails.postImage && (
-            <div className="postimage-container">
-              <img
-                src={URL.createObjectURL(postDetails.postImage)}
-                alt=""
-              />
-              <div
-                className="close-icon "
-                onClick={(e) =>
-                  setPostDetails((prev) => ({
-                    ...prev,
-                    postImage: "",
-                  }))
-                }
-              >
-                <AiOutlineCloseCircle /> 
-              </div>
-            </div>
-          )} */}
-          <div className="home-feature-cta-container">
-            {/* <label htmlFor="postImage">
-              <span
-                className="home-image-upload-btn"
-                title="Click To Upload Image"
-              >
-                <MdImage />
-              </span>
-            </label>
-            <input
-              type="file"
-              id="postImage"
-              accept="image/*"
-              hidden
-              onInput={(e) =>
-                setPostDetails((prev) => ({
-                  ...prev,
-                  postImage: e.target.files[0],
-                }))
-              }
-            /> */}
-
             <button
-              className="btn btn-primary btn-bold btn-round "
+              className="btn-post"
               title="Post"
               onClick={() => {
                 postHandler(postDetails)
@@ -121,7 +79,7 @@ const CreatePostModal = (props) => {
             >
               <span>Post</span>
             </button>
-          </div>
+          {/* </div> */}
     </div>
   )
 }

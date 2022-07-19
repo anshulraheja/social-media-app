@@ -1,0 +1,22 @@
+.main-container{
+    /* background: yellow; */
+    width: 70%;
+    margin: auto;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    display: flex;
+    /* background: green; */
+}
+.main-content > *:nth-child(1){
+    flex: 1 1 25%;
+}
+.main-content > *:nth-child(2){
+    flex: 1 1 50%;
+}
+.main-content > *:nth-child(3){
+    flex: 1 1 25%;
+}
+

@@ -1,0 +1,28 @@
+.followbar-container{
+    margin-top: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+}   
+.avatar-link-container{
+    text-decoration: none;
+    color: inherit;
+}
+.avatar-link-profile{
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.avatar-img-container{
+    width: 40px;
+    border-radius: 50%;
+}
+.avatar-img-container > img {
+    border-radius: 50%;
+}
+.avatar-link-info{
+    display: flex;
+    flex-direction: column;
+}
+.avatar-link-name{
+    font-weight: bold;
+}

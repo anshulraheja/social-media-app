@@ -1,16 +1,18 @@
-import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
+import './MainContainer.css'
 import FollowBar from '../FollowBar/FollowBar';
 import MenuBar from "../MenuBar/MenuBar";
+import Header from "../Header/Header";
 export function MainContainer({ children }) {
   return (
-    <div>
-      <MenuBar />
-      <div>
-        {/* <SearchBar /> */}
-        <div>{children}</div>
+    <div className="main-container">
+      <Header/>      
+      <div className="main-content">
+        <MenuBar />
+        <div>
+          <div>{children}</div>
+        </div>
+        <FollowBar />
       </div>
-      <FollowBar />
     </div>
   );
 }
