@@ -14,9 +14,9 @@ export const users = [
     email: "anshulraheja@gmail.com",
     password: "Anshul@123",
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618812/1500x500_qx8faw.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     bio: "FullStack Web Developer 1",
     website: "https://loremipsum.netlify.app/",
     createdAt: formatDate(),
@@ -24,37 +24,37 @@ export const users = [
     following: [
       {
         _id: uuid(),
-        firstName: "Holly",
-        lastName: "Jackson",
-        username: "hollyjackson",
+        firstName: "Adarsh",
+        lastName: "Balika",
+        username: "adarshbalika",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
         _id: uuid(),
-        firstName: "Walter",
-        lastName: "White",
-        username: "walterwhite",
+        firstName: "Nisha",
+        lastName: "Singh",
+        username: "nishasingh",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     followers: [
       {
         _id: uuid(),
-        firstName: "Holly",
-        lastName: "Jackson",
-        username: "hollyjackson",
+        firstName: "Adarsh",
+        lastName: "Balika",
+        username: "adarshbalika",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
         _id: uuid(),
-        firstName: "Walter",
-        lastName: "White",
-        username: "walterwhite",
+        firstName: "Nisha",
+        lastName: "Singh",
+        username: "nishasingh",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     bookmarks: [],
@@ -62,26 +62,26 @@ export const users = [
 
   {
     _id: uuid(),
-    firstName: "Holly",
-    lastName: "Jackson",
-    username: "hollyjackson",
-    email: "hollyjackson@gmail.com",
+    firstName: "Adarsh",
+    lastName: "Balika",
+    username: "adarshbalika",
+    email: "adarshbalika@gmail.com",
     password: "Holy@123",
     bio: "FullStack Web Developer 2",
     website: "https://loremipsum.netlify.app/",
     createdAt: formatDate(),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618812/1500x500_qx8faw.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     following: [
       {
         firstName: "Anshul",
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     followers: [
@@ -90,14 +90,14 @@ export const users = [
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
-        firstName: "Frank",
-        lastName: "Hill",
-        username: "frankhill",
+        firstName: "Aman",
+        lastName: "Rajput",
+        username: "amanrajput",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     bookmarks: [],
@@ -105,44 +105,44 @@ export const users = [
 
   {
     _id: uuid(),
-    firstName: "Frank",
-    lastName: "Hill",
-    username: "frankhill",
-    email: "frankhill@gmail.com",
-    password: "Frank@123",
+    firstName: "Aman",
+    lastName: "Rajput",
+    username: "amanrajput",
+    email: "amanrajput@gmail.com",
+    password: "Aman@123",
     bio: "FullStack Web Developer 3",
     website: "https://loremipsum.netlify.app/",
     createdAt: formatDate(),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618812/1500x500_qx8faw.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     followers: [
       {
         firstName: "Anshul",
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
         _id: uuid(),
-        firstName: "Walter",
-        lastName: "White",
-        username: "walterwhite",
+        firstName: "Nisha",
+        lastName: "Singh",
+        username: "nishasingh",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     following: [
       {
         _id: uuid(),
-        firstName: "Holly",
-        lastName: "Jackson",
-        username: "hollyjackson",
+        firstName: "Adarsh",
+        lastName: "Balika",
+        username: "adarshbalika",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     bookmarks: [],
@@ -150,19 +150,19 @@ export const users = [
 
   {
     _id: uuid(),
-    firstName: "Walter",
-    lastName: "White",
-    username: "walterwhite",
-    email: "walterwhite@gmail.com",
+    firstName: "Nisha",
+    lastName: "Singh",
+    username: "nishasingh",
+    email: "nishasingh@gmail.com",
     password: "Walt@123",
     bio: "FullStack Web Developer 4",
     website: "https://loremipsum.netlify.app/",
     createdAt: formatDate(),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618812/1500x500_qx8faw.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
 
     followers: [
       {
@@ -170,14 +170,14 @@ export const users = [
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
-        firstName: "Jesse",
-        lastName: "Green",
-        username: "jessegreen",
+        firstName: "Jaz",
+        lastName: "Brown",
+        username: "jazbrown",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     following: [
@@ -186,21 +186,21 @@ export const users = [
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
-        firstName: "Jesse",
-        lastName: "Green",
-        username: "jessegreen",
+        firstName: "Jaz",
+        lastName: "Brown",
+        username: "jazbrown",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
-        firstName: "Frank",
-        lastName: "Hill",
-        username: "frankhill",
+        firstName: "Aman",
+        lastName: "Rajput",
+        username: "amanrajput",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     bookmarks: [],
@@ -208,19 +208,19 @@ export const users = [
 
   {
     _id: uuid(),
-    firstName: "Jesse",
-    lastName: "Green",
-    username: "jessegreen",
-    email: "jessegreen@gmail.com",
-    password: "Jesse@123",
+    firstName: "Jaz",
+    lastName: "Brown",
+    username: "jazbrown",
+    email: "jazbrown@gmail.com",
+    password: "Jaz@123",
     bio: "FullStack Web Developer 5",
     website: "https://loremipsum.netlify.app/",
     createdAt: formatDate(),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618812/1500x500_qx8faw.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
 
     following: [
       {
@@ -228,15 +228,15 @@ export const users = [
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
         _id: uuid(),
-        firstName: "Walter",
-        lastName: "White",
-        username: "walterwhite",
+        firstName: "Nisha",
+        lastName: "Singh",
+        username: "nishasingh",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     followers: [
@@ -245,15 +245,15 @@ export const users = [
         lastName: "raheja",
         username: "anshulraheja",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
       {
         _id: uuid(),
-        firstName: "Walter",
-        lastName: "White",
-        username: "walterwhite",
+        firstName: "Nisha",
+        lastName: "Singh",
+        username: "nishasingh",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
       },
     ],
     bookmarks: [],

@@ -13,40 +13,40 @@ export const posts = [
     lastName: "Raheja",
     username: "anshulraheja",
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
-    content: `toote hue dil se hi #code nikalta hai 🚀🧑‍💻.`,
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation`,
     postImage:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652984625/t-3_ubmooi.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     likes: {
       likeCount: 4,
       likedBy: [
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
@@ -56,11 +56,11 @@ export const posts = [
     comments: [
       {
         _id: uuid(),
-        firstName: "Holly",
-        lastName: "Jackson",
-        username: "hollyjackson",
+        firstName: "Adarsh",
+        lastName: "Balika",
+        username: "adarshbalika",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         text: "testing comment",
         votes: {
           upvotedBy: [],
@@ -70,11 +70,11 @@ export const posts = [
       },
       {
         _id: uuid(),
-        firstName: "Frank",
-        lastName: "Hill",
-        username: "frankhill",
+        firstName: "Aman",
+        lastName: "Rajput",
+        username: "frankRajput",
         profilePhoto:
-          "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+          "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         text: "testing comment",
         votes: {
           upvotedBy: [],
@@ -87,7 +87,7 @@ export const posts = [
   {
     _id: uuid(),
     content:
-      "Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.Well-written Python looks like a poem to your computer.",
+      "Test 1",
     likes: {
       likeCount: 1,
       likedBy: [
@@ -96,82 +96,82 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    username: "hollyjackson",
-    firstName: "Holly",
-    lastName: "Jackson",
+    username: "adarshbalika",
+    firstName: "Adarsh",
+    lastName: "Balika",
     createdAt: new Date("May 10 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "Great work on the new post ",
+    content: "Test 2",
     likes: {
       likeCount: 4,
       likedBy: [
         {
           _id: uuid(),
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
 
         {
           _id: uuid(),
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Frank",
-    lastName: "Hill",
-    username: "frankhill",
+    firstName: "Aman",
+    lastName: "Rajput",
+    username: "frankRajput",
     createdAt: new Date("May 12 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "Everybody is riding the web3 wave.",
+    content: "Test 3",
     likes: {
       likeCount: 1,
       likedBy: [
         {
           _id: uuid(),
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
@@ -182,125 +182,125 @@ export const posts = [
     createdAt: new Date("May 15 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "Testing Post 12",
+    content: "Test 4",
     likes: {
       likeCount: 2,
       likedBy: [
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
           _id: uuid(),
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Jesse",
-    lastName: "Green",
-    username: "jessegreen",
+    firstName: "Jaz",
+    lastName: "Brown",
+    username: "jazbrown",
     createdAt: new Date("May 16 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "Javascript is love!!",
+    content: "Test 5",
     likes: {
       likeCount: 4,
       likedBy: [
         {
           _id: uuid(),
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
           firstName: "Anshul",
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Walter",
-    lastName: "White",
-    username: "walterwhite",
+    firstName: "Nisha",
+    lastName: "Singh",
+    username: "nishasingh",
     createdAt: new Date("May 13 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "PrepInTech",
+    content: "Test 6",
     postImage:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1653075765/Screenshot_2022-05-09_201932_zww3eq.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     likes: {
       likeCount: 4,
       likedBy: [
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
 
         {
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
@@ -311,13 +311,13 @@ export const posts = [
     createdAt: new Date("May 17 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
 
   {
     _id: uuid(),
-    content: "testing post 123",
+    content: "Test 7",
     likes: {
       likeCount: 1,
       likedBy: [
@@ -326,7 +326,7 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
@@ -337,12 +337,12 @@ export const posts = [
     createdAt: new Date("May 11 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "testing post 189",
+    content: "Test 9",
     likes: {
       likeCount: 3,
       likedBy: [
@@ -351,39 +351,39 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
 
         {
           _id: uuid(),
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Jesse",
-    lastName: "Green",
-    username: "jessegreen",
+    firstName: "Jaz",
+    lastName: "Brown",
+    username: "jazbrown",
     createdAt: new Date("May 09 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "testing post 12323",
+    content: "Test 10",
     likes: {
       likeCount: 2,
       likedBy: [
@@ -392,31 +392,31 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Holly",
-    lastName: "Jackson",
-    username: "hollyjackson",
+    firstName: "Adarsh",
+    lastName: "Balika",
+    username: "adarshbalika",
     createdAt: new Date("May 15 2022 05:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
 
   {
     _id: uuid(),
-    content: "tesing post 345",
+    content: "hello world",
     likes: {
       likeCount: 4,
       likedBy: [
@@ -425,44 +425,44 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Frank",
-    lastName: "Hill",
-    username: "frankhill",
+    firstName: "Aman",
+    lastName: "Rajput",
+    username: "frankRajput",
     createdAt: new Date("May 07 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "Say My Name !!",
+    content: "javascript is best",
     likes: {
       likeCount: 1,
       likedBy: [
@@ -471,89 +471,89 @@ export const posts = [
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Walter",
-    lastName: "White",
-    username: "walterwhite",
+    firstName: "Nisha",
+    lastName: "Singh",
+    username: "nishasingh",
     createdAt: new Date("May 11 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "testing post 5697",
+    content: "Do questions on leetcode",
     likes: {
       likeCount: 4,
       likedBy: [
         {
           _id: uuid(),
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
 
         {
           _id: uuid(),
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Frank",
-    lastName: "Hill",
-    username: "frankhill",
+    firstName: "Aman",
+    lastName: "Rajput",
+    username: "frankRajput",
     createdAt: new Date("May 03 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "testing one 1",
+    content: "LinkedIn for jov",
     likes: {
       likeCount: 2,
       likedBy: [
         {
           _id: uuid(),
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Frank",
-          lastName: "Hill",
-          username: "frankhill",
+          firstName: "Aman",
+          lastName: "Rajput",
+          username: "frankRajput",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
@@ -564,73 +564,73 @@ export const posts = [
     createdAt: new Date("May 02 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
   {
     _id: uuid(),
-    content: "testing post 1299",
+    content: "Eat Sleep Play Repeat",
     likes: {
       likeCount: 3000,
       likedBy: [
         {
-          firstName: "Jesse",
-          lastName: "Green",
-          username: "jessegreen",
+          firstName: "Jaz",
+          lastName: "Brown",
+          username: "jazbrown",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620951/johndoe_y6l9yo.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
           firstName: "Anshul",
           lastName: "Raheja",
           username: "anshulraheja",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652618738/6Ma76Y2Z_400x400_egub5u.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
         {
-          firstName: "Holly",
-          lastName: "Jackson",
-          username: "hollyjackson",
+          firstName: "Adarsh",
+          lastName: "Balika",
+          username: "adarshbalika",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
 
-    firstName: "Frank",
-    lastName: "Hill",
-    username: "frankhill",
+    firstName: "Aman",
+    lastName: "Rajput",
+    username: "frankRajput",
     createdAt: new Date("May 18 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652618938/blank-profile-picture-973460_960_720_gcq6h1.webp",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
 
   {
     _id: uuid(),
-    content: "Testing testing testing",
+    content: "I'm The Rock",
     likes: {
       likeCount: 1,
       likedBy: [
         {
-          firstName: "Walter",
-          lastName: "White",
-          username: "walterwhite",
+          firstName: "Nisha",
+          lastName: "Singh",
+          username: "nishasingh",
           profilePhoto:
-            "https://res.cloudinary.com/ms-inc/image/upload/v1652620899/BB-S5B-Walt-590_etlsew.webp",
+            "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
         },
       ],
       dislikedBy: [],
     },
-    firstName: "Holly",
-    lastName: "Jackson",
-    username: "hollyjackson",
+    firstName: "Adarsh",
+    lastName: "Balika",
+    username: "adarshbalika",
     createdAt: new Date("May 01 2022 04:15:43 PM"),
     updatedAt: formatDate(),
     profilePhoto:
-      "https://res.cloudinary.com/ms-inc/image/upload/v1652621027/hollyjackson_stfsal.jpg",
+      "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457789/baatchit/customer-service_zpcfrg.png",
     comments: [],
   },
 ];
