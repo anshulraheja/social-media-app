@@ -10,7 +10,7 @@ export function MainContainer({ children }) {
         {/* <SearchBar /> */}
         <div>{children}</div>
       </div>
-      {/* <FollowBar /> */}
+      <FollowBar />
     </div>
   );
 }

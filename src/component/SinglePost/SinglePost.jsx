@@ -19,6 +19,7 @@ import {
   likePost,
   removeFromBookmarks,
 } from "../../redux/reducers/postsSlice";
+import { EditPostModal } from "../EditPostModal/EditPostModal";
 import { useState } from "react";
 export default function SinglePost({ post }) {
   const dispatch = useDispatch();
@@ -150,11 +151,11 @@ export default function SinglePost({ post }) {
           )}
         </div>
       </div>
-      {/* <EditPostModal
+     { showEditModal &&  <EditPostModal
         showEditModal={showEditModal}
         setShowEditModal={setShowEditModal}
         post={post}
-      /> */}
+      />}
     </div>
   );
 }

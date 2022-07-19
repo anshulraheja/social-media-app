@@ -13,7 +13,10 @@ import { getPosts } from "./redux/reducers/postsSlice";
 import { getUsers } from "./redux/reducers/usersSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-
+import { PostComment } from './pages/PostComment/PostComment'
+import { Bookmarks } from "./pages/Bookmarks/Bookmarks";
+import { Explore } from "./pages/Explore/Explore";
+import { User } from "./pages/User/User";
 function App() {
   const dispatch = useDispatch();
 
@@ -37,6 +40,53 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route
+          path="/:username/:postId"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <PostComment />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/bookmarks"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <Bookmarks />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/explore"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <Explore />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/:username"
+          element={
+            <PrivateRoute>
+              <MainContainer>
+                <User />
+              </MainContainer>
+            </PrivateRoute>
+          }
+        />
+        {/* <Route element={<PrivateRoute />}>
+          <Route element={<MainContainer />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/:username/:postId" element={<PostComment />} />
+          </Route>
+        </Route> */}
+
         <Route element={<RestrictedRoute />}>
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
