@@ -30,7 +30,7 @@ const LoginPage = () => {
                     <h3 className="login-header" >Login</h3>
                     <div>
                         <label htmlFor="username">Username</label>
-                        <input type="text" name="username" placeholder="admin@gmail.com" id="email" onChange={inputHandler} required />
+                        <input type="text" name="username" placeholder="admin" id="email" onChange={inputHandler} required />
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>

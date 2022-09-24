@@ -10,9 +10,9 @@ export const users = [
     _id: uuid(),
     firstName: "Anshul",
     lastName: "raheja",
-    username: "anshulraheja",
+    username: "admin",
     email: "anshulraheja@gmail.com",
-    password: "Anshul@123",
+    password: "admin123",
     profilePhoto:
       "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1650457790/baatchit/woman_ojbd7v.png",
     coverPhoto:
